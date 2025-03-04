@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ onConnectClick }) => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
         {/* Left: Logo */}
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Dar Blockchain Logo" className="w-12 h-12 object-contain" />
+          <img src={logo} alt="Dar Blockchain Logo" className="wz-12 h-12 object-contain" />
           <h1 className="text-xl font-bold">Dar Blockchain</h1>
         </div>
 
