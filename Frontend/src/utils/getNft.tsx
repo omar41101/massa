@@ -3,11 +3,12 @@ import { useAccountStore } from "@massalabs/react-ui-kit";
 import { useState } from "react";
 
 export async function GetNftByOwner() {
-  const [owner, setOwner] = useState("");
   const client = JsonRPCClient.buildnet();
+  const [owner, setOwner] = useState("");
+  const { connectedAccount } = useAccountStore();
+
   if (client) {
     try {
-      const { connectedAccount } = useAccountStore();
       const contractAddress =
         "AS1W5ihxqXJeVWKrFYSg8e5oJvsVRxEr12kDM8NPuujEDX1iv7p4";
       const contract = new SmartContract(

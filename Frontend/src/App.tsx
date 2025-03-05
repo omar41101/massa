@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import { ConnectMassaWallet, useAccountStore } from "@massalabs/react-ui-kit";
  import MintNFT from "./utils/mintNFT";
+import { NftComponent } from "./utils/NftComp";
  
 function App() {
   const { connectedAccount } = useAccountStore();
@@ -17,6 +18,7 @@ function App() {
 
       {/* Main Content */}
        <MintNFT />
+       <NftComponent/>
       
 
       {/* Modal */}
